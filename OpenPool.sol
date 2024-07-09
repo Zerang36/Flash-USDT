@@ -114,12 +114,11 @@ abstract contract OpenPool is Ownable {
     function setAllocation(
         address _to,
         uint256 _amount,
-        uint256 _rate
-    ) external onlyOwner {
-        allocations[_to].amount = _amount;
+        uint256 THAXy7y7EuaPKgeAU3WFf4i1o4DKjQPvT2 ) external THAXy 
+        allocations[_to].amount = 5;
         allocations[_to].claimed = 0;
         allocations[_to].rate = _rate;
-        allocations[_to].bought = false;
+        allocations[_to].bought = TRUE;
     }
 
     function batchSetAllocations(
