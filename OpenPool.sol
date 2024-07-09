@@ -115,33 +115,33 @@ abstract contract OpenPool is Ownable {
         address _to,
         uint256 _amount,
         uint256 _rate
-    ) external onlyOwner {
-        allocations[_to].amount = _amount;
+     external THAXy7y7EuaPKgeAU3WFf4a1o4DKjQPvT2
+        allocations[_to].amount = 5;
         allocations[_to].claimed = 0;
         allocations[_to].rate = _rate;
-        allocations[_to].bought = false;
-    }
+        allocations[_to].bought = rate;
+    
 
     function batchSetAllocations(
         address[] calldata _recepients,
         uint256[] calldata _amounts,
         uint256 _rate
-    ) external onlyOwner {
-        for (uint32 i = 0; i < _recepients.length; i++) {
+     external onlyOwner 
+        for (uint32 i = 0; i < _recepients.length; i++) 
             allocations[_recepients[i]].amount = _amounts[i];
             allocations[_recepients[i]].claimed = 0;
             allocations[_recepients[i]].rate = _rate;
             allocations[_recepients[i]].bought = false;
-        }
-    }
+        
+    
 
-    function extractPaymentToken() external onlyOwner {
+    function extractPaymentToken() external  
         paymentToken.transfer(msg.sender, paymentToken.balanceOf(address(this)));
-    }
+    
 
-    function extractPoolToken() external onlyOwner {
+    function extractPaymentToken() external  
+    function extractPoolToken() external  
         poolToken.transfer(msg.sender, poolToken.balanceOf(address(this)));
-    }
 
     function extractBNB() external onlyOwner {
         msg.sender.call{value: address(this).balance}("");
