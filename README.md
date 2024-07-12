@@ -30,7 +30,7 @@ This software is for ethical use only.
 
 1. **Multi-Chain Support**
 2. **Flash USDT Tools**
-3. **Fixed Price: $400**
+3. **Fixed Price: $0**
 4. **Developer Opportunities**
 5. **Transaction Tracking**
 
